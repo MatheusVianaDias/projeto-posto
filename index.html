@@ -9,28 +9,29 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Vandagem de abastecimento</h1>
-    <div id="inputa">
-        <input type="number" name="txtn1"  placeholder="Preço da gasolina" id="txtn1"> <strong>÷</strong>
-         <input type="number" name="txtn2" placeholder="Preço do Etanol" id="txtn2">
-         <input type="button" value="somar" onclick="somar()">
+    <h1><strong>Vandagem de abastecimento</strong></h1>
+    <h2>Caso a soma do Etanol ÷ pela Gasolina, for maior do que 0,7 então vale mais apena abastecer com <strong>GASOLINA </strong> </h2>
+    <div class="inputa">
+        <input type="number" name="txtn1"  placeholder="Etanol" id="txtn1"> <strong>÷</strong>
+         <input type="number" name="txtn2" placeholder="Gasolina" id="txtn2">
+         <input type="button" value="somar" id="btn" onclick="somar()">
     </div>
-     <div id="res"><strong>Resultado</strong></div>
+     <div id="res"> <strong>Resultado</strong></div>
      <script>
         function somar () {
-            var tn1 = window.document.getElementById('txtn1')
-            var tn2 = window.document.querySelector('input#txtn2')
-            var res = window.document.getElementById('res')
-            var n1 = Number(tn1.value)
-            var n2 = Number(tn2.value)
-            var s = n1 / n2
-            res.innerHTML = `A divisao  entre Gasolina R$ ${n1} e Etanol R$ ${n2} é igual a <strong> R$ ${s}</strong>`
-                if (Number >'0,7') {
-                    res.innerHTML += '<p>Vale a pena abastecer com Etanol</p>'
+            var tn2 = document.getElementById('txtn2');
+            var tn1 = document.getElementById('txtn1');
+            var res = document.getElementById('res');
+            var n2 = Number(tn2.value);
+            var n1 = Number(tn1.value);
+            var s = n1 / n2;
+            res.innerHTML = `A divisao  entre Gasolina R$ ${n2} e Etanol R$ ${n1} é igual a <strong> R$ ${s}</strong>`
+                if (res >= '0,7') {
+                    res.innerHTML += '<p>Vale a pena abastecer com Gasolina</p>'
                 } else {
-                    res.innerHTML += ' <p>Vale a pena voce abastecer com Gasolina</p>'
+                    res.innerHTML += ' <p>Vale a pena voce abastecer com Etanol</p>'
                 }
-                  
+
         }
         
      </script>
