@@ -60,7 +60,7 @@ h2:hover {
     border-radius: 30px;
     box-shadow: 5px 5px 10px black;
     z-index: 5;
-    background: linear-gradient(-90deg, rgba(255, 0, 43, 0.466), rgba(255, 238, 0, 0.39), rgba(0, 17, 255, 0.356));
+    
 }
 
 #txtn1:hover{
@@ -80,7 +80,7 @@ h2:hover {
     border-radius: 30px;
     box-shadow: 5px 5px 10px black;
     z-index: 5;
-    background: linear-gradient(-90deg, rgba(255, 0, 43, 0.466), rgba(255, 238, 0, 0.39), rgba(0, 17, 255, 0.356));
+    
 }
 
 #txtn2:hover{

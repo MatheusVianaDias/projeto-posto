@@ -10,28 +10,28 @@
 </head>
 <body>
     <h1><strong>Vandagem de abastecimento</strong></h1>
-    <h2>Caso a soma do Etanol ÷ pela Gasolina, for maior do que 0,7 então vale mais apena abastecer com <strong>GASOLINA </strong> </h2>
+    <h2>Caso a soma do Etanol <strong>÷</strong> pela Gasolina, for maior do que 0,7 então vale mais apena abastecer com <strong>GASOLINA </strong> </h2>
     <div class="inputa">
         <input type="number" name="txtn1"  placeholder="Etanol" id="txtn1"> <strong>÷</strong>
          <input type="number" name="txtn2" placeholder="Gasolina" id="txtn2">
-         <input type="button" value="somar" id="btn" onclick="somar()">
+         <input type="button" value="somar" id="btn" onclick="dividir()">
     </div>
      <div id="res"> <strong>Resultado</strong></div>
      <script>
-        function somar () {
+        function dividir () {
             var tn2 = document.getElementById("txtn2");
             var tn1 = document.getElementById("txtn1");
             var res = document.getElementById('res');
             var n2 = Number(tn2.value);
             var n1 = Number(tn1.value);
-            var s = n1 / n2;
-            res.innerHTML = `A divisao  entre Gasolina R$ ${n2} e Etanol R$ ${n1} é igual a <strong> R$ ${s}</strong>`
-                if (res >= '0,7') {
-                    res.innerHTML += '<p>Vale a pena abastecer com Gasolina</p>'
-                } else {
-                    res.innerHTML += ' <p>Vale a pena voce abastecer com Etanol</p>'
+            var dividido = n1 / n2;
+            res.innerHTML = `A divisao  entre Gasolina R$ ${n2} e Etanol R$ ${n1} é igual a <strong> R$ ${dividido.toFixed(2)}</strong>`;
+                if (dividido > 0.7) {
+                    res.innerHTML += '<p>Vale a pena abastecer com Gasolina</p>';
+                } else  {
+                    res.innerHTML += ' <p>Vale a pena voce abastecer com Etanol</p>';
                 }
-
+ 
         }
         
      </script>
