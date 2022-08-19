@@ -1,0 +1,19 @@
+#div1 {
+    width: 60px;
+    height: 40px;
+    background-color: red;
+    position: absolute;
+    animation-name: example;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    transform: scaleX(-1);
+  }
+  
+ 
+  @keyframes example {
+   5%   {background-color:red; left:10px; top:0px;}
+    50%  {background-color:rgb(255, 0, 200); left:85%; top:0px;}
+    100%  {background-color:rgb(196, 106, 188); left:0%; top:0px;}
+    
+    
+  }

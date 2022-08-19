@@ -7,15 +7,48 @@
     <title>Calcular Vantagem</title>
     <link rel="shortcut icon" href="favicon.ico.ico" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="animation2.css">
+    <link rel="stylesheet" href="animation3.css">
+    <link rel="stylesheet" href="animation4.css">
+    <link rel="stylesheet" href="div.css">
 </head>
 <body>
-    <h1><strong>Vandagem de abastecimento</strong></h1>
+    <div class="container">
+        <div class="ball"></div>
+        <div class="ball"></div>
+        <div class="ball"></div>
+        <div class="ball"></div>
+        <div class="ball"></div>
+        <div class="ball"></div>
+        <div class="ball"></div>
+      </div>
+      <div class="container2">
+        <div class="ball1"></div>
+        <div class="ball1"></div>
+        <div class="ball1"></div>
+        <div class="ball1"></div>
+        <div class="ball1"></div>
+        <div class="ball1"></div>
+        <div class="ball1"></div>
+      </div>
+    <h1>
+        <div class="wrapper">
+            <div class="toggle">
+              <input class="toggle-input" type="checkbox" />
+              <div class="toggle-bg"></div>
+              <div class="toggle-switch">
+                <div class="toggle-switch-figure"></div>
+                <div class="toggle-switch-figureAlt"></div>
+              </div>  
+            </div>
+          </div><strong>Vandagem de Abastecimento</strong></h1>
+          <div class="inputa">
+            <input type="number" name="txtn1"  placeholder="Etanol" id="txtn1"> <strong>÷</strong>
+             <input type="number" name="txtn2" placeholder="Gasolina" id="txtn2">
+             <input type="button" value="somar" id="btn" onclick="dividir()">
+        </div>
     <h2>Caso a soma do Etanol <strong>÷</strong> pela Gasolina, for maior do que 0,7 então vale mais apena abastecer com <strong>GASOLINA </strong> </h2>
-    <div class="inputa">
-        <input type="number" name="txtn1"  placeholder="Etanol" id="txtn1"> <strong>÷</strong>
-         <input type="number" name="txtn2" placeholder="Gasolina" id="txtn2">
-         <input type="button" value="somar" id="btn" onclick="dividir()">
-    </div>
+   
      <div id="res"> <strong>Resultado</strong></div>
      <script>
         function dividir () {
@@ -31,9 +64,11 @@
                 } else  {
                     res.innerHTML += ' <p>Vale a pena voce abastecer com Etanol</p>';
                 }
- 
         }
-        
      </script>
 </body>
+<footer>
+    <div id="div1"><img src="imagem1.png" alt=""></div>
+</footer>
+    <footer><link rel="stylesheet" href="Maps"></footer>
 </html>
